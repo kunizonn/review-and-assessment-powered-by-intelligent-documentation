@@ -70,8 +70,8 @@ export const parameters = {
   // Map State並行処理設定
   // 並行処理数はサービスの負荷とスロットリングに影響します
   // ---------------------------------------------------
-  // reviewMapConcurrency: 1, // レビュープロセッサのMap State並行処理数（デフォルト：1）
-  // checklistInlineMapConcurrency: 1, // チェックリストプロセッサのインラインMap State並行処理数（デフォルト：1）
+  reviewMapConcurrency: 5, // レビュープロセッサのMap State並行処理数（デフォルト：1）
+  checklistInlineMapConcurrency: 5, // チェックリストプロセッサのインラインMap State並行処理数（デフォルト：1）
 
   // AgentCore Code Interpreter設定
   // ---------------------------------------------------
